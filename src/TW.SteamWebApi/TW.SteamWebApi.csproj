@@ -24,6 +24,9 @@
       <Compile Update="Models\SteamWebApiSettings.cs">
         <DependentUpon>ISteamWebApiSettings.cs</DependentUpon>
       </Compile>
+      <Compile Update="Services\SteamUserService.cs">
+        <DependentUpon>ISteamUserService.cs</DependentUpon>
+      </Compile>
     </ItemGroup>
 
 </Project>

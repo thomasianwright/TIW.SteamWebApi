@@ -1,6 +1,9 @@
-﻿namespace TW.SteamWebApi.Models;
+﻿using System.ComponentModel.DataAnnotations;
 
-public class SteamWebApiSettings
+namespace TW.SteamWebApi.Models;
+
+public class SteamWebApiSettings : ISteamWebApiSettings
 {
-    
+    [Required]
+    public string ApiKey { get; set; }
 }

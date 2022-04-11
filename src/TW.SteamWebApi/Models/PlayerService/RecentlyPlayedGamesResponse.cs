@@ -2,9 +2,7 @@
 
 namespace TW.SteamWebApi.Models.PlayerService;
 
-
-
-public class RecentlyPlayedGames
+public class RecentlyPlayedGamesResponse
 {
     [JsonPropertyName("response")]
     public SteamResponse Response { get; set; }

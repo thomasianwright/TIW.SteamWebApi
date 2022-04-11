@@ -1,8 +1,16 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TW.SteamWebApi", "src\TW.SteamWebApi\TW.SteamWebApi.csproj", "{A8AD5C9B-7799-4A48-8687-EA395DBFDD90}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A8AD5C9B-7799-4A48-8687-EA395DBFDD90}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A8AD5C9B-7799-4A48-8687-EA395DBFDD90}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A8AD5C9B-7799-4A48-8687-EA395DBFDD90}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A8AD5C9B-7799-4A48-8687-EA395DBFDD90}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

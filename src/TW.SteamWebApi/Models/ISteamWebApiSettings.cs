@@ -2,5 +2,5 @@
 
 public interface ISteamWebApiSettings
 {
-    
+    public string ApiKey { get; set; }
 }

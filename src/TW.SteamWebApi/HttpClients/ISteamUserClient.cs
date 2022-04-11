@@ -8,5 +8,5 @@ public interface ISteamUserClient
     public Task<IApiResponse> GetResolveVanityUrl(string key, string vanity, int type = 1);
 
     [Get("/GetUserGroupList/v1/?key={key}&steamid={steamid}")]
-    public Task<IApiResponse> GetUserGroupList(string key, ulong steamid);
+    public Task<IApiResponse> GetUserGroupList(string key, string steamid);
 }

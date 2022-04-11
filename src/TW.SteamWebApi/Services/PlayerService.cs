@@ -18,7 +18,7 @@ public class PlayerService : IPlayerService
         _settings = settings;
     }
 
-    public async Task<RecentlyPlayedGamesResponse?> GetRecentlyPlayedGames(ulong steamid, int count)
+    public async Task<RecentlyPlayedGamesResponse?> GetRecentlyPlayedGames(string steamid, int count)
     {
         var response = await _client.GetRecentlyPlayedGames(_settings.ApiKey, steamid, count);
 
@@ -39,7 +39,7 @@ public class PlayerService : IPlayerService
         return response.Content;
     }
 
-    public async Task<OwnedGamesResponse?> GetOwnedGames(ulong steamid,
+    public async Task<OwnedGamesResponse?> GetOwnedGames(string steamid,
         bool includeFreeGames = true,
         bool includeAppInfo = true, int appIdFilter = 0)
     {
@@ -62,7 +62,7 @@ public class PlayerService : IPlayerService
         return response.Content;
     }
 
-    public async Task<GetSteamLevelResponse?> GetSteamLevel(ulong steamid)
+    public async Task<GetSteamLevelResponse?> GetSteamLevel(string steamid)
     {
         var response = await _client.GetSteamLevel(_settings.ApiKey, steamid);
         
@@ -83,7 +83,7 @@ public class PlayerService : IPlayerService
         return response.Content;
     }
 
-    public async Task<GetBadgesResponse?> GetBadges(string key, ulong steamid)
+    public async Task<GetBadgesResponse?> GetBadges(string key, string steamid)
     {
         var response = await _client.GetBadges(_settings.ApiKey, steamid);
         

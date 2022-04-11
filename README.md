@@ -10,3 +10,12 @@ services.AddSteamWebApi(new SteamWebApiSettings
        ApiKey = "<STEAMAPIKEY>"
    });
 ```
+
+Use the services provided.
+
+ISteamUserService
+
+IPlayerService
+
+## Docs
+The naming is inline with valves documenation on the api

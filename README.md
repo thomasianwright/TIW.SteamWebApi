@@ -1,3 +1,4 @@
+![Nuget](https://img.shields.io/nuget/dt/TIW.SteamWebApi)
 # TIW.SteamWebApi
 A steam api wrapping for .NET Core
 
